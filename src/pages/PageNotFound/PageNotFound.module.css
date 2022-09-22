@@ -1,0 +1,40 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #171725;
+}
+
+.image {
+    max-width: 250px;
+    margin-bottom: 40px;
+}
+
+.heading {
+    font-size: 6rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.description {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.wrap button {
+    background-image: linear-gradient(
+        to right top,
+        rgb(29, 192, 113),
+        rgb(164, 217, 108)
+    );
+    border: none;
+}
+
+@media (max-width: 739px) {
+    .description {
+        font-size: 1.5rem;
+    }
+}

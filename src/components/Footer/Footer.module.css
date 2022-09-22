@@ -1,0 +1,145 @@
+.footer {
+    background-color: #242424;
+    padding: 92px 0 32px 0;
+    color: var(--primary-color);
+}
+
+.footerSubscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.footerHeading {
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+}
+
+.footerText {
+    font-size: 2rem;
+    margin-bottom: 24px;
+}
+
+.formGroup {
+    display: flex;
+}
+
+.input {
+    padding: 8px 24px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    margin-right: 14px;
+}
+
+.input::placeholder {
+    color: #b1b1b1;
+}
+
+.footertList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.footerItem {
+    width: calc(100% / 4);
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+}
+
+.footerItem h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.footerItem a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+.footerItem a:hover {
+    color: #a1a1a1;
+    transition: 0.3s ease-out;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 56px;
+}
+
+.footerLogo {
+    display: flex;
+    align-items: center;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footerLogo > i {
+    margin-left: 8px;
+}
+
+.socialMedia > p {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.socialIcon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+.socialIcon a {
+    color: var(--primary-color);
+    font-size: 2.4rem;
+}
+
+@media (max-width: 1023px) {
+    .footerHeading {
+        font-size: 2.2rem;
+    }
+
+    .formGroup {
+        flex-direction: column;
+    }
+
+    .input {
+        margin: 0 0 14px 0;
+    }
+
+    .formGroup button {
+        width: 100%;
+    }
+
+    .socialMedia {
+        flex-direction: column;
+    }
+
+    .footerLogo,
+    .socialMedia > p {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 739px) {
+    .footerItem {
+        width: 50%;
+        margin-bottom: 26px;
+    }
+}
